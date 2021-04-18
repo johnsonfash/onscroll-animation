@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer="" src="../dist/animate.bundle.js"></script>
+  <title>Box</title>
+</head>
+<body>
+  <style>
+    body{
+      background: linear-gradient(60deg, rgba(125, 125, 45, 0.2), rgba(45, 15, 190, 0.5));
+      overflow-x: hidden;
+      }
+    .container, .container2 {
+      perspective: 1000px;
+    }
+    .cube{
+      width: 10em;
+      margin: 5em auto;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(40deg);
+    }
+    .two {
+      position: relative;
+      margin: 100vh 10em 0 10em;
+    }
+    .side {
+      position: absolute;
+      width: 10em;
+      height: 10em;
+      background-color: grey;
+      /* transform: rotate(-20deg); */
+    }
+    .front {
+      transform: rotate(-20deg) translateZ(5em);
+      background-color: red;
+    }
+    .back {
+      transform: rotate(-20deg) translateZ(-5em);
+      background-color: green;
+    }
+    .top{
+      transform: rotateX(90deg) rotateY(-20deg) translateZ(5em);
+      background-color: purple;
+    }
+    .bottom{
+      transform: rotateX(-90deg) rotateY(20deg) translateZ(5em);
+      background-color: black;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="cube one">
+      <div class="back side"></div>
+      <div class="bottom side"></div>
+      <div class="top side"></div>
+      <div class="front side"></div>
+    </div>
+  </div>
+
+  <h1>Box 1</h1>
+
+  <div class="container2 ">
+    <div class="cube two">
+      <div class="back side"></div>
+      <div class="bottom side"></div>
+      <div class="top side"></div>
+      <div class="front side"></div>
+    </div>
+  </div>
+
+  <h1>Box 2</h1>
+  
+
+  <script>
+    window.onload = ()=>{
+
+      let animation = new Animation({
+      ".one, .two": {
+        parameters: [
+          "animation-duration: 2s"
+        ],
+        25: [
+         "transform: rotateX(-20deg) rotateY(360deg)"
+        ],
+        50: [
+         "transform: rotateX(-20deg) rotateY(40deg)"
+        ],
+        75: [
+         "transform: translateY(400px) rotateX(-200deg) rotateY(40deg)",
+         "animation-time-function: ease-out"
+        ],
+        100: [
+         "transform: translateY(0px) rotateX(-20deg) rotateY(40deg)",
+         "animation-time-function: ease-in"
+        ]
+      }
+    });
+
+      animation.init();
+    }
+  </script>
+  
+</body>
+</html>

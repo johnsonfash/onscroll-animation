@@ -1,0 +1,27 @@
+{
+  "name": "scroll-animation",
+  "version": "1.0.0",
+  "description": "Scroll animation library",
+  "homepage": "https://johnerry.github.io/scroll-animation/",
+  "main": "dist/animate.bundle.js",
+  "module": "src/animate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "bugs": {
+    "url": "https://github.com/johnerry/scroll-animation/issues"
+  },
+  "keywords": ["scrollAnimation","aos","animation","animationInView","animationOnScroll"],
+  "author": "Johnson Fashanu <fashanutosin7@gmail.com> (https://apluswebmaker.com/about)",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
