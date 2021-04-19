@@ -10,4 +10,4 @@ const _error = (obj) => {
   }
 }
 
-export default _error ;
+module.exports = _error;

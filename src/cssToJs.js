@@ -28,4 +28,4 @@ const _cssToJs = (cssObj) => {
   }
 };
 
-export default _cssToJs;
+module.exports = _cssToJs;

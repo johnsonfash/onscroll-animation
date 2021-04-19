@@ -1,7 +1,7 @@
-import _cssToJs from "./cssToJs";
-import _error from "./exceptions";
+const _error = require("./exceptions");
+const _cssToJs = require("./cssToJs");
 
-export default class Animation {
+module.exports = class Animation {
   constructor(arg) {
     this.data = _error(arg);
     this.elements = [];
@@ -130,7 +130,6 @@ export default class Animation {
         this.startingMode[p] = mode;
         if (animeStyle === 'css') el.classList.remove(elPrm.css);
       }
-
     }
   }
 
