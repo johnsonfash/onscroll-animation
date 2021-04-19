@@ -13,7 +13,13 @@
   "bugs": {
     "url": "https://github.com/johnerry/scroll-animation/issues"
   },
-  "keywords": ["scrollAnimation","aos","animation","animationInView","animationOnScroll"],
+  "keywords": [
+    "scrollAnimation",
+    "aos",
+    "animation",
+    "animationInView",
+    "animationOnScroll"
+  ],
   "author": "Johnson Fashanu <fashanutosin7@gmail.com> (https://apluswebmaker.com/about)",
   "license": "MIT",
   "devDependencies": {
@@ -23,5 +29,13 @@
   "files": [
     "dist",
     "src"
-  ]
+  ],
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsonfash/scroll-animation.git"
+  }
 }
