@@ -1,54 +1,35 @@
-# **Scroll Animation**
+Scroll Animation
+Build Status GitHub package.json version
 
-[![Build Status](https://travis-ci.com/johnsonfash/scroll-animation.svg?branch=master)](https://travis-ci.com/johnsonfash/scroll-animation) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/scroll-animation)
-
-![Twitter Follow](https://img.shields.io/twitter/follow/iamJohnsonFash?style=social)
+Twitter Follow
 
 Simple javascript library for animation when element(s) are in view while scrolling the browser.
 
-* * *
+🚀 Demo
+Custom website build
+3D box animation
+Article Slides
+⚙ Installation
+Option A.
+NPM installation
 
-## 🚀 **[Demo](https://johnsonfash.github.io/scroll-animation/website.html)**
-
-- [Custom website build](https://johnsonfash.github.io/scroll-animation/website.html)
-- [3D box animation](https://johnsonfash.github.io/scroll-animation/3d-box.html)
-- [Article Slides](https://johnsonfash.github.io/scroll-animation/articles.html)
-
-# ⚙ **Installation**
-
-### **Option A.**
-
-**NPM installation**
-
-```html
 npm install scroll-animation --save
-```
+Import:
 
-**Import:**
-
-```javascript
 import { Animation } from "scroll-animation";
 
 const animate = new Animation({
   ...
 });
-```
+Option B.
+Use CDN - load directly from jsDelivr CDN
 
-### **Option B.**
-
-**Use CDN - load directly from jsDelivr CDN**
-
-```html
 <script src="https://cdn.jsdelivr.net/gh/johnsonfash/scroll-animation/dist/animate.bundle.min.js"></script>
 
 var animate = new Animation({
   ...
 });
-```
-
-# **Use**
-
-```javascript
+Use
 var animate = new Animation({
         ".grid11": {
           parameters: [
@@ -77,16 +58,12 @@ var animate = new Animation({
       });
       animate.defaultParam(["animation-duration: .8s", "run: once", "animation-fill-mode: forwards","pixel-correction: -100px", "animation-time-function: ease-out"]);
       animate.init();
-```
+Explanation
+1. Animation({....}) accepts an object {...}. this object contains contains properties like ".grid10", "section.two img, section.four img".
 
-# **Explanation**
+Basically, this object properties can be any css selector, which a document.querySelector() method accepts.
 
-1\. `Animation({....})` accepts an object `{...}`. this object contains contains properties like `".grid10"`, `"section.two img, section.four img"`.
+2. The value for the CSS Selector must be an object which holds various properties and values for animation to work. This properties are explained below
 
-Basically, this object properties can be any css selector, which a `document.querySelector()` method accepts.
-
-2\. The value for the **CSS Selector** must be an object which holds various **properties** and **values** for animation to work. This properties are explained below
-
-- **`parameters: [...]`** or **`parameters: {...}` **
-
+parameters: [...] or parameters: {...}
 This lets you
