@@ -8,9 +8,9 @@
   <script defer="" src="../dist/animate.bundle.js"></script>
   <title>Pepsi</title>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     * {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: 600;
+      font-family: "Poppins", sans-serif;
     }
 
     main {
@@ -31,6 +31,11 @@
       font-size: 2.5em;
       margin-top: 0;
       text-shadow: 5px 5px 10px rgba(64, 35, 35, 0.1);
+    }
+    a{
+      color: inherit;
+      text-decoration-style: wavy;
+      text-underline-position: under;
     }
 
     p {
@@ -69,7 +74,8 @@
     }
 
     section {
-      margin: 10em auto;
+      margin: 12em auto;
+      position: relative;
     }
 
     section.one,
@@ -79,6 +85,15 @@
     section.five .other-slide {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+    }
+
+    section.one {
+      margin: 5em auto;
+    }
+
+    section.two {
+      margin-top: 10em;
     }
 
     .complex .inside {
@@ -88,11 +103,9 @@
 
     section.one .left,
     section.three .book,
-    section.four .one-left,
     section.five .other,
     section.one .right,
     section.three .complex,
-    section.four .one-right,
     section.five .person {
       position: relative;
     }
@@ -111,26 +124,26 @@
       right: -1000px;
     }
 
-    section.one .left,
-    section.one .right {
-      width: 48%;
-    }
-
     section.two,
     section.six {
       text-align: center;
     }
-
+    section.one .left,
+    section.one .right,
+    .complex .inside .left-inside,
+    .complex .inside .right-inside,
+    section.five .other,
+    section.five .img ,
     section.three img,
     section.three .complex,
     section.four .one-right,
     section.four .one-left {
-      width: 48%;
+      width: 47%;
       box-sizing: border-box;
     }
 
     section.three .right-inside img {
-      transform: rotate(-55deg);
+      transform: rotate(-30deg);
     }
 
     section.four .one-left,
@@ -139,15 +152,17 @@
       margin-right: auto;
     }
 
-    .complex .inside .left-inside,
-    .complex .inside .right-inside,
-    section.five .other,
-    section.five .img {
-      width: 48%;
+    section.four .one-left,
+    section.three img,
+    section.one .left{
+      margin-right: auto;
     }
 
-    section.five {
-      align-items: center;
+    section.four .one-right,
+    .gallery, section.five .img,
+    section.three .complex,
+    section.one .right {
+      margin-left: auto;
     }
 
     .gallery {
@@ -156,11 +171,6 @@
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: auto;
       box-sizing: border-box;
-      margin-left: auto;
-    }
-
-    section.five .img {
-      margin-left: auto;
     }
 
     .gallery img {
@@ -270,15 +280,15 @@
       <div class="left">
         <h1>Pepsi</h1>
         <p>Culpa adipiscing in non cillum voluptate, fugiat cupidatat eiusmod in pariatur reprehenderit, dolor do labore
-          aute velit milaru officia. Occaecat aliqua laborum excepteur dolor dolore, lorem qui tempor sunt et. Sed est
-          duis incididunt ut, sabdor mollit magna id consectetur. Amet sit sint elit in proident ipsum, eu dolore.</p>
+          aute velit milaru officia. Occaecat aliqua laborum excepteur dolor dolore, lorem qui tempor sunt et.</p>
         <div class="button">
-          <button>Start</button>
+          <button>Start</button> &nbsp;
           <button>More.</button>
         </div>
       </div>
       <div class="right">
-        <img src="./asset/sipping-soda.jpg" alt="" class="person">
+        <!-- <img src="./asset/sipping-soda.jpg" alt="" class="person"> -->
+        <img src="./asset/tech6.jpg" alt="" class="person">
       </div>
     </section>
 
@@ -297,11 +307,11 @@
           elit in, sunt proident sed cupidatat. Qui.</p>
         <div class="inside">
           <div class="left-inside">
-            <img src="./asset/fun.png" alt="" class="book1">
+            <img src="./asset/food.jpg" alt="" class="book1">
             <h3>You like drinks?</h3>
           </div>
           <div class="right-inside">
-            <img src="./asset/fun.png" alt="" class="book2">
+            <img src="./asset/food.jpg" alt="" class="book2">
             <h3>You like to parteyy!</h3>
           </div>
         </div>
@@ -316,7 +326,7 @@
           </p>
         </div>
         <div class="right">
-          <img src="./asset/rocket.png" alt="" class="plane">
+          <img src="./asset/vector34.jpg" alt="" class="plane">
         </div>
       </div>
       <div class="one-right  gallery">
@@ -339,9 +349,9 @@
         <p>Cillum sed sit sunt, elit culpa sed sit, cillum sabdor lorem elit aliqua ipsum aliqua. Sed culpa sit mollit,
           culpa aliqua occaecat sabdor. Ipsum sit voluptate sunt cillum sed, lorem elit cillum sit aliqua elit.</p>
         <div class="other-slide">
-          <div><img src="./asset/fun-guy.jpg" alt=""></div>
-          <div><img src="./asset/holding-pepsi.jpg" alt=""></div>
-          <div><img src="./asset/summer-time.jpg" alt=""></div>
+          <div><img src="./asset/web-designer.jpg" alt=""></div>
+          <div><img src="./asset/mobile.jpg" alt=""></div>
+          <div><img src="./asset/minimalistic.jpg" alt=""></div>
         </div>
 
       </div>
@@ -358,7 +368,7 @@
   <script>
     window.onload = () => {
       let animation = new Animation({
-        "section.one .left, section.three .book, section.four .one-left, section.five .other": {
+        "section.one .left, section.three .book, section.five .other": {
           from: [
             "left: -500px"
           ],
@@ -366,7 +376,7 @@
             "left: 0px"
           ]
         },
-        "section.one .right, section.three .complex, section.four .one-right, section.five .person": {
+        "section.one .right, section.three .complex, section.five .person": {
           from: [
             "right: -500px"
           ],
@@ -384,9 +394,28 @@
             "transform: translateY(0px)"
           ]
         },
+        ".grid10":{
+          parameters: [
+            "animation-duration: 0.8s",
+            "animation-fill-mode: forwards"
+          ],
+          to: [
+            "transform: translateY(-110px)",
+          ]
+        },
+        ".grid11": {
+          parameters: [
+            "animation-duration: 0.8s",
+            "animation-delay: 1s",
+            "animation-fill-mode: forwards"
+          ],
+          to: [
+            "transform: translateX(-150px)"
+          ]
+        }
 
       });
-      animation.defaultParam(["animation-duration: 1s", "run: once", "animation-fill-mode: forwards", "animation-time-function: ease-out"]);
+      animation.defaultParam(["animation-duration: .8s", "run: once", "animation-fill-mode: forwards","pixel-correction: -100px", "animation-time-function: ease-out"]);
       animation.init();
     }
   </script>
