@@ -27,9 +27,9 @@ npm install onscroll-animation --save
 **Import:**
 
 ```javascript
-import { Animation } from "onscroll-animation";
+import { OnScrollAnimation } from "onscroll-animation";
 
-const animate = new Animation({
+const animate = new OnScrollAnimation({
   ...
 });
 ```
@@ -41,15 +41,18 @@ const animate = new Animation({
 ```html
 <script src="https://cdn.jsdelivr.net/npm/onscroll-animation/dist/animate.bundle.min.js"></script>
 
-var animate = new Animation({
+
+<script>
+var animate = new OnScrollAnimation({
   ...
 });
+<script>
 ```
 
 # **Use**
 
 ```javascript
-var animate = new Animation({
+var animate = new OnScrollAnimation({
         ".grid11": {
           parameters: [
             "animation-duration: 0.8s",
@@ -81,9 +84,9 @@ var animate = new Animation({
 
 # **Explanation**
 
-### **Animation class**
+### **OnScrollAnimation class**
 
-**`Animation({....})`** accept only an object **`{...}`**. This object contains css selectors like **`".grid10"`**, **`"section.two img, section.four img"`** etc.
+**`OnScrollAnimation({....})`** accept only an object **`{...}`**. This object contains css selectors like **`".grid10"`**, **`"section.two img, section.four img"`** etc.
 
 Basically, this object properties can be any css selector, which a **`document.querySelector()`** method accepts.
 
@@ -146,7 +149,7 @@ Similar to css property `to: {.....}` used in `@keyframe` after defining `from {
 This is similar to using percentage in `@keyframes`, only difference is not including the `%` sign i.e
 
 ```javascript
-const animation = Animation({
+const animation = OnScrollAnimation({
   "#imag1": {
     parameters: [.....],
     0: ["width: 20px".....],
@@ -182,7 +185,7 @@ Without defining animation @keyframes in javascript, custom css can be used with
 </style>
 
 <script>
-const animation  = new Animation({
+const animation  = new OnScrollAnimation({
   ".image1": {
     css: "move"  // adds custom css class only
   },
@@ -199,7 +202,7 @@ animation.init();
 The Animation method `defaultParams()` defines a default paramter for each selector. Meaning you can ommit the parameters property for every element if they are all thesame i.e
 
 ```javascript
-const animation = new Animation({
+const animation = new OnScrollAnimation({
   ".grid1, .grid2": {
     from: [....],
     to: [....]
@@ -217,7 +220,7 @@ animation.init();
 You can also **ovaride** the `defaultParams()` method for an element by specifying its own `parameters` i.e
 
 ```javascript
-const animation = new Animation({
+const animation = new OnScrollAnimation({
   ".grid1, .grid2": {
     from: [....],
     to: [....]
@@ -240,7 +243,7 @@ The `init()` method initialize the animation to run after the page loads.
 # More Example:
 
 ```javascrist
-const animation = new Animation({
+const animation = new OnScrollAnimation({
         ".one": {
           parameters: [
             "animation-duration: 1s",

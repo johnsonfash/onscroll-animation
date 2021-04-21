@@ -1,7 +1,7 @@
 const _error = require("./exceptions");
 const _cssToJs = require("./cssToJs");
 
-module.exports = class Animation {
+module.exports = class OnScrollAnimation {
   constructor(arg) {
     this.data = _error(arg);
     this.elements = [];
