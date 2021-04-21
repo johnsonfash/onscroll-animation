@@ -27,7 +27,7 @@ npm install onscroll-animation --save
 **Import:**
 
 ```javascript
-import { OnScrollAnimation } from "onscroll-animation";
+import OnScrollAnimation from "onscroll-animation";
 
 const animate = new OnScrollAnimation({
   ...
