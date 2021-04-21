@@ -89,7 +89,7 @@ Basically, this object properties can be any css selector, which a **`document.q
 
 The value for the **CSS Selector** i.e **`".grid4"`** must be an object which holds various **properties** and **values** for animation to work.
 
-### **Properties**
+## **Properties**
 
 **1\. `**parameters:[...]**`  or `parameters: {...}` ;**
 
@@ -194,7 +194,7 @@ animation.init();
 </script>
 ```
 
-### **Animation.defaultParams()**
+## **Animation.defaultParams()**
 
 The Animation method `defaultParams()` defines a default paramter for each selector. Meaning you can ommit the parameters property for every element if they are all thesame i.e
 
@@ -233,11 +233,11 @@ animation.defaultParams(["animation-duration: 1s", "animation-fill-mode: forward
 animation.init();
 ```
 
-### **Animation.init()**
+## **Animation.init()**
 
 The `init()` method initialize the animation to run after the page loads.
 
-# More Examples:
+# More Example:
 
 ```javascrist
 const animation = new Animation({
