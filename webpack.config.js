@@ -1,6 +1,6 @@
 // const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
-const { default : Animation } = require("./src/animate");
+const { default : OnScrollAnimation } = require("./src/animate");
 
 module.exports = {
   entry: {
@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: 'animate.bundle.js',
     library: {
-      name: "Animation",
+      name: "OnScrollAnimation",
       type: "umd"
     },
     path: path.resolve(__dirname, 'dist')
