@@ -1,6 +1,6 @@
 {
   "name": "onscroll-animation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On scroll animation library",
   "homepage": "https://johnerry.github.io/onscroll-animation/",
   "main": "src/animate.js",
