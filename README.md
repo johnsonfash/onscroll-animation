@@ -39,7 +39,7 @@ const animate = new Animation({
 **Use CDN - load directly from jsDelivr CDN**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/johnsonfash/onscroll-animation/dist/animate.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/onscroll-animation/dist/animate.bundle.min.js"></script>
 
 var animate = new Animation({
   ...
