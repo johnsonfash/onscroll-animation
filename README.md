@@ -91,7 +91,7 @@ The value for the **CSS Selector** i.e **`".grid4"`** must be an object which ho
 
 ### **Properties**
 
-### 1\. `**parameters:[...]**`  or `parameters: {...}` ;
+**1\. `**parameters:[...]**`  or `parameters: {...}` ;**
 
 This define **`@keyframes`** property for each element i.e `parameters: [...]` or `parameters: {...)` can be an array containing strings of regular css or object containing its javascript equivalent like the example below:
 
@@ -133,15 +133,15 @@ There is non shortcut like **`"animation: drop 1s forwards"`** for now. Please s
 
 Properties of a selector i.e **`parameters`**, `**from**`, **`to`**, **`0%`**, `**75%**` and more can both be an array, containing string equivalent of your regular css property or an object containing its equivalent in javascript. i.e **"max-width"** is **maxWidth** when working with objects.
 
-### 2\. `from: [...]` or `from:{...}`
+**2\. `from: [...]` or `from:{...}`**
 
 Similar to css property `from {.....}` used in `@keyframe`. i.e `from: ["width: 0px","height:20px"....]`
 
-### 3\. `to: [...]` or `to: {....}`
+**3\. `to: [...]` or `to: {....}`**
 
 Similar to css property `to: {.....}` used in `@keyframe` after defining `from {...}` i.e `to: {width: "100%",height: "200px"}`
 
-### 4\. `0: [...], 50: [...], 100:{.....}`
+**4\. `0: [...], 50: [...], 100:{.....}`**
 
 This is similar to using percentage in `@keyframes`, only difference is not including the `%` sign i.e
 
@@ -235,7 +235,7 @@ animation.init();
 
 ### **Animation.init()**
 
-The init() method initialize the animation to run after the page loads.
+The `init()` method initialize the animation to run after the page loads.
 
 # More Examples:
 
