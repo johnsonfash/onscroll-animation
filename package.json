@@ -1,9 +1,9 @@
 {
-  "name": "scroll-animation",
+  "name": "onscroll-animation",
   "version": "1.0.0",
-  "description": "Scroll animation library",
-  "homepage": "https://johnerry.github.io/scroll-animation/",
-  "main": "dist/animate.bundle.js",
+  "description": "On scroll animation library",
+  "homepage": "https://johnerry.github.io/onscroll-animation/",
+  "main": "src/animate.js",
   "module": "src/animate.js",
   "scripts": {
     "test": "jest",
@@ -11,10 +11,10 @@
     "build": "webpack --mode production"
   },
   "bugs": {
-    "url": "https://github.com/johnerry/scroll-animation/issues"
+    "url": "https://github.com/johnerry/onscroll-animation/issues"
   },
   "keywords": [
-    "scrollAnimation",
+    "OnScrollAnimation",
     "aos",
     "animation",
     "animationInView",
@@ -35,10 +35,9 @@
   "directories": {
     "example": "examples"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnsonfash/scroll-animation.git"
+    "url": "git+https://github.com/johnsonfash/onscroll-animation.git"
   }
 }

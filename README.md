@@ -1,4 +1,4 @@
-# **Scroll Animation**
+# **OnScroll Animation**
 
 [![Build Status](https://travis-ci.com/johnsonfash/scroll-animation.svg?branch=master)](https://travis-ci.com/johnsonfash/scroll-animation) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/scroll-animation)
 
@@ -8,11 +8,11 @@ Simple javascript library for animation when element(s) are in view while scroll
 
 * * *
 
-## 🚀 **[Demo](https://johnsonfash.github.io/scroll-animation/website.html)**
+## 🚀 **[Demo](https://johnsonfash.github.io/onscroll-animation/website.html)**
 
-- [Custom website build](https://johnsonfash.github.io/scroll-animation/website.html)
-- [3D box animation](https://johnsonfash.github.io/scroll-animation/3d-box.html)
-- [Article Slides](https://johnsonfash.github.io/scroll-animation/articles.html)
+- [Custom website build](https://johnsonfash.github.io/onscroll-animation/website.html)
+- [3D box animation](https://johnsonfash.github.io/onscroll-animation/3d-box.html)
+- [Article Slides](https://johnsonfash.github.io/onscroll-animation/articles.html)
 
 # ⚙ **Installation**
 
@@ -21,13 +21,13 @@ Simple javascript library for animation when element(s) are in view while scroll
 **NPM installation**
 
 ```html
-npm install scroll-animation --save
+npm install onscroll-animation --save
 ```
 
 **Import:**
 
 ```javascript
-import { Animation } from "scroll-animation";
+import { Animation } from "onscroll-animation";
 
 const animate = new Animation({
   ...
@@ -39,7 +39,7 @@ const animate = new Animation({
 **Use CDN - load directly from jsDelivr CDN**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/johnsonfash/scroll-animation/dist/animate.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/johnsonfash/onscroll-animation/dist/animate.bundle.min.js"></script>
 
 var animate = new Animation({
   ...
