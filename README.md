@@ -1,6 +1,6 @@
 # **OnScroll Animation**
 
-[![Build Status](https://travis-ci.com/johnsonfash/scroll-animation.svg?branch=master)](https://travis-ci.com/johnsonfash/scroll-animation) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/scroll-animation)
+[![Build Status](https://travis-ci.com/johnsonfash/onscroll-animation.svg?branch=master)](https://travis-ci.com/johnsonfash/onscroll-animation) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/scroll-animation)
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/iamJohnsonFash?style=social)
 
